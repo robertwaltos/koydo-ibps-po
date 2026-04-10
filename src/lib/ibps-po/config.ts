@@ -1,0 +1,45 @@
+// IBPS PO Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM050",
+  slug: "ibps-po",
+  name: "IBPS PO",
+  fullName: "Institute of Banking Personnel Selection PO",
+  alias: "Institute of Banking Personnel Selection PO",
+  family: "IBPS",
+  category: "Banking recruitment",
+  subcategory: "Bank officer recruitment",
+  country: "India",
+  region: "South Asia",
+  languages: ["English","Hindi"],
+  estimatedAnnualTakers: "high applicants",
+  testingWindow: "Aug-Nov",
+  schedulePattern: "Annual",
+  ageGroup: "20-30",
+  targetUser: "Bank job seeker",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ"],
+  adaptivity: "Tiered",
+  sections: "Prelims + mains",
+  scoringMode: "Cutoff",
+  essayOrSpeaking: "Descriptive in mains",
+  ipRisk: "Low",
+  contentReuse: "banking_aptitude",
+  uiEngine: "section_timed_objective",
+  monetizationPotential: "High",
+  tier: "Tier 2",
+  launchWave: "Wave 3",
+  themeColor: "#0891B2",
+  themeColorDark: "#0E7490",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
